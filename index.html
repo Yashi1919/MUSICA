@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica</title>
+    <style>
+        /* Basic Reset and Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Header Styling */
+        header {
+            padding: 40px 0; /* Reduced padding for a smaller header */
+            background-color: #7e57c2;
+            text-align: center;
+            border-bottom: 3px solid #b39ddb;
+        }
+        h1 {
+            font-size: 2.2em;
+            font-weight: normal;
+            color: #ffffff;
+        }
+        /* Main Content Layout */
+        .content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .tabs {
+            display: flex;
+            gap: 100px;
+            margin-top: 20px;
+        }
+        .tab-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .tab-column h2 {
+            color: #7e57c2;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .tab-column a {
+            color: #b39ddb; /* Lighter color for better visibility */
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .tab-column a:hover {
+            color: #b39ddb;
+            text-decoration: underline;
+        }
+        /* Footer Styling */
+        footer {
+            background-color: #7e57c2;
+            text-align: center;
+            padding: 30px 0;
+            border-top: 3px solid #b39ddb;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Musica</h1>
+    </header>
+
+    <div class="content">
+        <div class="tabs">
+            <!-- Left Column Tabs -->
+            <div class="tab-column">
+                <h2>Services</h2>
+                <a href="player.html">Normal Music Player</a>
+                <a href="roomplayer.html">Real Time Music Player</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+
+            <!-- Right Column Tabs -->
+            <div class="tab-column">
+                <h2>Others</h2>
+                <a href="download.html">Download App</a>
+                <a href="updates.html">Updates</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Musica. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
